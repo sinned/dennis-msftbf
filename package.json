@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.4.4",
+    "dashbot": "git+ssh://git@github.com/actionably/dashbot.git#microsoft",
     "restify": "^4.3.0"
   },
   "devDependencies": {

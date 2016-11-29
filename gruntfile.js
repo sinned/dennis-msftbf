@@ -32,9 +32,7 @@ module.exports = function(grunt) {
         script: 'app.js',
         options: {
           nodeArgs: ['--debug'],
-          env: {
-            PORT: '3978'
-          }
+          env: env
         }
       }
     },
