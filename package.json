@@ -1,0 +1,25 @@
+{
+  "name": "dennis-msftbf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.4.4",
+    "restify": "^4.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodemon": "^0.5.4",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "nodemon": "^1.11.0"
+  }
+}
