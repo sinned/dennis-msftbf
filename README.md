@@ -1,1 +1,3 @@
-# dennis-msftbf
+# sinnedbot
+
+Dennis' Bot.
