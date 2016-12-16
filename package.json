@@ -10,10 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.4.4",
-    "dashbot": "git+ssh://git@github.com/actionably/dashbot.git#microsoft",
-    "restify": "^4.3.0"
+    "dashbot": "^0.8.2",
+    "huh": "^2.0.1",
+    "lodash": "^4.17.2",
+    "mixpanel": "^0.5.0",
+    "sprintf-js": "^1.0.3"
   },
   "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
     "grunt": "^1.0.1",
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-jshint": "^1.1.0",

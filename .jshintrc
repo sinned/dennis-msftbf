@@ -16,7 +16,7 @@
   "unused": false, // Warn unused variables.
   "strict": true, // Require `use strict` pragma in every file.
   "trailing": true, // Prohibit trailing whitespaces.
-  "smarttabs": false, // Suppresses warnings about mixed tabs and spaces
+  "smarttabs": false, // Suppresses warnings about mixed tabs and spaces,
   "globals": { // Globals variables.
     "jasmine": true,
     "angular": true,
@@ -39,5 +39,6 @@
   ],
   "indent": 2, // Specify indentation spacing
   "devel": true, // Allow development statements e.g. `console.log();`.
-  "noempty": true
+  "noempty": true,
+  "asi": true // Suppresses warnings about semicolons
 }
