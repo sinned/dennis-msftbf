@@ -52,7 +52,7 @@ const dashbotApiMap = {
     'webchat': process.env.DASHBOT_API_KEY_GENERIC,
     'skype': process.env.DASHBOT_API_KEY_GENERIC
 };
-const dashbot = require('dashbot')(dashbotApiMap,{debug:false, urlRoot: process.env.DASHBOT_URL_ROOT}).microsoft;
+const dashbot = require('dashbot')(dashbotApiMap,{debug:true, urlRoot: process.env.DASHBOT_URL_ROOT}).microsoft;
 dashbot.setFacebookToken(process.env.FACEBOOK_PAGE_TOKEN); // only needed for Facebook Bots
 bot.use(dashbot);
 
@@ -96,7 +96,7 @@ bot.dialog('/', [
 bot.dialog('/menu', [
     function (session) {
         //builder.Prompts.choice(session, 'What demo would you like to run?', 'prompts|picture|cards|list|carousel|receipt|actions|weather|excuse|gif|animationCard|(quit)');
-        builder.Prompts.choice(session, 'Choose one:', 'prompts');
+        builder.Prompts.choice(session, 'Choose one:', 'prompts|picture|cards|list|carousel|receipt|actions|weather|excuse|(quit)');
         //session.send('Aloha there!');
 
     },
@@ -199,6 +199,15 @@ bot.dialog('/cards', [
                     ])
                     .tap(builder.CardAction.openUrl(session, 'https://en.wikipedia.org/wiki/Pike_Place_Market'))
             ]);
+        session.send(msg);
+
+        msg = new builder.Message(session)
+            .attachments([
+                new builder.ThumbnailCard(session)
+                    .title('Another Card')
+                    .subtitle('This is another card')
+                    .tap(builder.CardAction.openUrl(session, 'https://en.wikipedia.org/wiki/Pike_Place_Market'))
+            ]);            
         session.endDialog(msg);
     }
 ]);

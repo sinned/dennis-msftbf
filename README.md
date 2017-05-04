@@ -1,3 +1,3 @@
 # sinnedbot
 
-Dennis' Bot.
+Dennis' Bot. Built using Microsoft Bot Framework.
